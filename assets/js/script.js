@@ -27,6 +27,22 @@ $(function(){
 		if(this == ':'){
 			digit_holder.append('<div class="dots">');
 		}
+		// (+)MD - BEGIN INSERT - 29.10.15
+		else if(this == 's2'){
+			var pos = $('<div>');
+
+			for(var i=1; i<8; i++){
+				if(i != 6)
+				pos.append('<span class="d' + i + '">');
+			}
+
+			// Set the digits as key:value pairs in the digits object
+			digits[this] = pos;
+
+			// Add the digit elements to the page
+			digit_holder.append(pos);
+		// (+)MD - END INSERT - 29.10.15
+		}
 		else{
 
 			var pos = $('<div>');
