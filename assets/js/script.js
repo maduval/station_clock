@@ -25,7 +25,10 @@ $(function(){
 	$.each(positions, function(){
 
 		if(this == ':'){
-			digit_holder.append('<div class="dots">');
+			// (+/-)MD - BEGIN MODIFICATION - 31.10.15
+			digit_holder.append('<div class="space">');
+			//digit_holder.append('<div class="dots">');
+			// (+/-)MD - END MODIFICATION - 31.10.15
 		}
 		// (+)MD - BEGIN INSERT - 29.10.15
 		else if(this == 's2'){
