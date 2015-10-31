@@ -188,6 +188,9 @@ section, footer, header, aside{
 #clock .digits .space{
 	width: 14px;
 }
+#clock .digits .second{
+	width: 14px;
+}
 /*(+)MD - END INSERT - 31.10.15*/
 
 #clock .digits .d1{			height:5px;width:16px;top:0;left:6px;}
